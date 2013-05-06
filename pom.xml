@@ -31,8 +31,8 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git://github.com/tasubo/jurl-tools.git</connection>
-        <developerConnection>scm:git:git://github.com/tasubo/jurl-tools.git</developerConnection>
+        <connection>scm:git:https://github.com/tasubo/jurl-tools.git</connection>
+        <developerConnection>scm:git:https://github.com/tasubo/jurl-tools.git</developerConnection>
         <url>https://github.com/tasubo/jurl-tools.git</url>
     </scm>
 
