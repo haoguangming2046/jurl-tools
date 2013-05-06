@@ -5,6 +5,10 @@ public class URLDecode {
         /*
          * Taken from http://www.w3.org/International/O-URL-code.html
          */
+        if (s == null || s.isEmpty()) {
+            return "";
+        }
+
         StringBuffer sbuf = new StringBuffer();
         int l = s.length();
         int ch = -1;

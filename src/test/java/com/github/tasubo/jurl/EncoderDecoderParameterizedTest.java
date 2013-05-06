@@ -11,13 +11,13 @@ import static org.hamcrest.Matchers.equalToIgnoringCase;
 import static org.junit.Assert.assertThat;
 
 @RunWith(Parameterized.class)
-public class EncoderDecoderTest {
+public class EncoderDecoderParameterizedTest {
 
     private String original;
     private String encoded;
 
 
-    public EncoderDecoderTest(String original, String encoded) {
+    public EncoderDecoderParameterizedTest(String original, String encoded) {
         this.original = original;
         this.encoded = encoded;
     }

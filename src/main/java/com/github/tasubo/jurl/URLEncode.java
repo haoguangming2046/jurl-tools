@@ -66,6 +66,10 @@ public class URLEncode {
      */
     public static String encode(String s) {
         StringBuffer sbuf = new StringBuffer();
+        if (s == null || s.isEmpty()) {
+            return "";
+        }
+
         int len = s.length();
         for (int i = 0; i < len; i++) {
             int ch = s.charAt(i);
