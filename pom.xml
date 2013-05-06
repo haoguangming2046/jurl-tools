@@ -4,9 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>jurl-tools</groupId>
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+
+    <groupId>com.github.tasubo</groupId>
     <artifactId>jurl-tools</artifactId>
-    <version>0.5</version>
+    <version>0.6-SNAPSHOT</version>
+
+    <name>jurl-tools</name>
+    <description>Since original Java's URLEncode and URLDecode actually do Form-type encode, these tiny tools provider
+        URLEncode and URLDecode that follow https://en.wikipedia.org/wiki/Percent-encoding</description>
+
+    <url>https://github.com/tasubo/jurl-tools</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -14,9 +26,25 @@
 
     <licenses>
         <license>
-            <name>Apache 2.0</name>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <scm>
+        <connection>scm:git:git://github.com/tasubo/jurl-tools.git</connection>
+        <developerConnection>scm:git:git://github.com/tasubo/jurl-tools.git</developerConnection>
+        <url>https://github.com/tasubo/jurl-tools.git</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>tadas.subonis</id>
+            <name>Tadas Subonis</name>
+            <email>tadas.subonis@gmail.com</email>
+        </developer>
+    </developers>
 
     <build>
         <plugins>
@@ -26,6 +54,18 @@
                 <executions>
                     <execution>
                         <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
                         <goals>
                             <goal>jar</goal>
                         </goals>
