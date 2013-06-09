@@ -1,5 +1,6 @@
 jurl-tools
 ==========
+[![Build Status](https://drone.io/github.com/tasubo/jurl-tools/status.png)](https://drone.io/github.com/tasubo/jurl-tools/latest)
 
 Java URL tools - encode and decode
 
